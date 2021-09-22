@@ -1,1 +1,1 @@
-TODO
+In diesem Ordner wird später im Semester das ITSM-Change Management-System gemockt.

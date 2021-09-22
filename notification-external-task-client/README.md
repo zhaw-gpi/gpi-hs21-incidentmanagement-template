@@ -1,1 +1,1 @@
-TODO
+In diesem Ordner wird später im Semester der Notification Service erstellt, welcher als External Task Client auch Incident Management-Prozessspezifische Notifications versendet.
