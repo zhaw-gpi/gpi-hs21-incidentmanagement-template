@@ -143,9 +143,7 @@ PS: Auch wenn dies von einem Event Management-System kommt, soll jeweils ein Ben
     <bpmn:sequenceFlow id="Flow_16k4vyx" sourceRef="StorungKategorisierenPriorisierenUndDiagnostizierenTask" targetRef="LosungGefundenGateway" />
     <bpmn:sequenceFlow id="Flow_0a5bddm" sourceRef="Gateway_0xvnwh7" targetRef="StorungKategorisierenPriorisierenUndDiagnostizierenTask" />
     <bpmn:sequenceFlow id="NeinSequenceFlow" name="Nein" sourceRef="LosungGefundenGateway" targetRef="Zustandigen2ndLevelSupportBestimmenTask" />
-    <bpmn:sequenceFlow id="NeinSequenceFlow1" name="Nein" sourceRef="LosungAkzeptabelGateway" targetRef="Gateway_0xvnwh7">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${!solution_accepted}</bpmn:conditionExpression>
-    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="NeinSequenceFlow1" name="Nein" sourceRef="LosungAkzeptabelGateway" targetRef="Gateway_0xvnwh7" />
     <bpmn:sequenceFlow id="Flow_00ru07g" sourceRef="Gateway_1syzqn9" targetRef="Gateway_0xvnwh7" />
     <bpmn:sequenceFlow id="Flow_0s8rcaf" sourceRef="StorungsmeldungAusEMErhaltenStartEvent" targetRef="Gateway_1syzqn9" />
     <bpmn:sequenceFlow id="Flow_1en3knz" sourceRef="UberRfCErstellungInformierenTask" targetRef="StorungsmeldungAlsRfCEskaliertEndEvent" />
@@ -155,9 +153,7 @@ PS: Auch wenn dies von einem Event Management-System kommt, soll jeweils ein Ben
     <bpmn:sequenceFlow id="Flow_126o88o" sourceRef="RfCErstellenTask" targetRef="UberRfCErstellungInformierenTask" />
     <bpmn:sequenceFlow id="Flow_1s4lt25" sourceRef="Zustandigen2ndLevelSupportBestimmenTask" targetRef="BenutzerUberEskalationInformierenTask" />
     <bpmn:sequenceFlow id="Flow_1whffa6" sourceRef="Gateway_0yifn3j" targetRef="LosungPrufenTask" />
-    <bpmn:sequenceFlow id="JaSequenceFlow2" name="Ja" sourceRef="LosungAkzeptabelGateway" targetRef="UberAkzeptierteLosungInformierenTask">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${solution_accepted}</bpmn:conditionExpression>
-    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="JaSequenceFlow2" name="Ja" sourceRef="LosungAkzeptabelGateway" targetRef="UberAkzeptierteLosungInformierenTask" />
     <bpmn:sequenceFlow id="Flow_0cgu3rb" sourceRef="UberAkzeptierteLosungInformierenTask" targetRef="StorungBehobenEndEvent" />
     <bpmn:task id="StorungKategorisierenPriorisierenUndDiagnostizierenTask" name="Störung kategorisieren, priorisieren und diagnostizieren">
       <bpmn:documentation>Anforderungen
